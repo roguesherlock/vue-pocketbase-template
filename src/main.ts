@@ -6,6 +6,7 @@ import router from "./router";
 import { pb } from "@/lib";
 
 import "./assets/main.css";
+import "@/assets/tailwind.css";
 import { pocketBaseSymbol } from "@/symbols/injectionSymbols";
 
 const app = createApp(App);
