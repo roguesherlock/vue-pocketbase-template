@@ -13,8 +13,8 @@ TypeScript cannot handle type information for `.vue` imports by default, so we r
 If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
 
 1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
+   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
+   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
 ## Customize configuration
@@ -42,6 +42,7 @@ Note: You should also copy .env
 ```sh
 cp .env.example .env
 ```
+
 </aside>
 
 ### Compile and Hot-Reload for Development
@@ -58,27 +59,28 @@ pnpm dev
 cd backend
 go run cmd/server/main.go serve
 ```
-> Note that it doesn't hot reload. yet. I'll add a makefile later
 
+> Note that it doesn't hot reload. yet. I'll add a makefile later
 
 ### Type-Check, Compile and Minify for Production
 
 ```sh
 pnpm build
 ```
+
 ### Pocketbase
 
 ```sh
 cd backend
 go build -o server cmd/server/*.go
 ```
+
 If you're using flyctl (Highly Recommended!)
 
 ```sh
 cd backend
 flyctl deploy --dockerfile build/Dockerfile
 ```
-
 
 ### Lint with [ESLint](https://eslint.org/)
 
