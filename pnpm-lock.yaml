@@ -35,8 +35,8 @@ specifiers:
 dependencies:
   '@headlessui/vue': 1.7.7_vue@3.2.45
   '@heroicons/vue': 2.0.13_vue@3.2.45
-  '@tanstack/query-persist-client-core': 4.20.4
-  '@tanstack/query-sync-storage-persister': 4.20.4
+  '@tanstack/query-persist-client-core': 4.20.4_yfxhplab6ibzeoxkk4xh5zjcde
+  '@tanstack/query-sync-storage-persister': 4.20.4_yfxhplab6ibzeoxkk4xh5zjcde
   '@tanstack/vue-query': 4.20.5_vue@3.2.45
   motion: 10.15.3
   pinia: 2.0.28_e7lp6ggkpgyi5vqd44m2kxvk6i
@@ -63,7 +63,7 @@ devDependencies:
   tailwindcss: 3.2.4_postcss@8.4.20
   typescript: 4.7.4
   vite: 4.0.3_@types+node@18.11.18
-  vite-plugin-pwa: 0.14.0_vite@4.0.3
+  vite-plugin-pwa: 0.14.0_d6hwg7klbxt3x5xmvc2y355a7m
   vue-tsc: 1.0.18_typescript@4.7.4
 
 packages:
@@ -1731,16 +1731,18 @@ packages:
     resolution: {integrity: sha512-lhLtGVNJDsJ/DyZXrLzekDEywQqRVykgBqTmkv0La32a/RleILXy6JMLBb7UmS3QCatg/F/0N9/5b0i5j6IKcA==}
     dev: false
 
-  /@tanstack/query-persist-client-core/4.20.4:
+  /@tanstack/query-persist-client-core/4.20.4_yfxhplab6ibzeoxkk4xh5zjcde:
     resolution: {integrity: sha512-MzrRC9esSEpD/kY28Zi4YqkWvuOUmpO67vpgCkQszOLbAHLMeEibId3njXxIZXDPg5fvX3HaAwFS7GheuMuKFg==}
     peerDependencies:
       '@tanstack/query-core': 4.20.4
+    dependencies:
+      '@tanstack/query-core': 4.20.4
     dev: false
 
-  /@tanstack/query-sync-storage-persister/4.20.4:
+  /@tanstack/query-sync-storage-persister/4.20.4_yfxhplab6ibzeoxkk4xh5zjcde:
     resolution: {integrity: sha512-+LrpqZDScy9FfyJJGSY6/sMbgi9zHbDCXWOwpKJ2aPfTblk0cAJDjlM7rS49FXZD//edEJehm9SgRhFN2/9pSg==}
     dependencies:
-      '@tanstack/query-persist-client-core': 4.20.4
+      '@tanstack/query-persist-client-core': 4.20.4_yfxhplab6ibzeoxkk4xh5zjcde
     transitivePeerDependencies:
       - '@tanstack/query-core'
     dev: false
@@ -4343,10 +4345,12 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-pwa/0.14.0_vite@4.0.3:
+  /vite-plugin-pwa/0.14.0_d6hwg7klbxt3x5xmvc2y355a7m:
     resolution: {integrity: sha512-3wZx47PLWTckOQhc8Y6YZjAbNZ89Ovh4TdCT97MGhgl7aFd2LUekVnAmIgFwgMqyxzJ93nmkPF/ALpEW/i2qCg==}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0
+      workbox-build: ^6.5.4
+      workbox-window: ^6.5.4
     dependencies:
       '@rollup/plugin-replace': 5.0.2_rollup@3.8.1
       debug: 4.3.4
@@ -4357,7 +4361,6 @@ packages:
       workbox-build: 6.5.4
       workbox-window: 6.5.4
     transitivePeerDependencies:
-      - '@types/babel__core'
       - supports-color
     dev: true
 
