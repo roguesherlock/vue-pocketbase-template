@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/inter': ^4.5.14
   '@headlessui/tailwindcss': ^0.1.2
   '@headlessui/vue': ^1.7.7
   '@heroicons/vue': ^2.0.13
@@ -33,6 +34,7 @@ specifiers:
   vue-tsc: ^1.0.12
 
 dependencies:
+  '@fontsource/inter': 4.5.14
   '@headlessui/vue': 1.7.7_vue@3.2.45
   '@heroicons/vue': 2.0.13_vue@3.2.45
   '@tanstack/query-persist-client-core': 4.20.4_yfxhplab6ibzeoxkk4xh5zjcde
@@ -1438,6 +1440,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@fontsource/inter/4.5.14:
+    resolution: {integrity: sha512-JDC9AocdPLuGsASkvWw9hS5gtHE7K9dOwL98XLrk5yjYqxy4uVnScG58NUvFMJDVJRl/7c8Wnap6PEs+7Zvj1Q==}
+    dev: false
 
   /@headlessui/tailwindcss/0.1.2_tailwindcss@3.2.4:
     resolution: {integrity: sha512-AQNESz+f1grCxifrocOE6hDMDFqhqY0g3xrSGOS0ocGkmVkssaBzXaAPAPNSs/nHmr4ZUhfl5THQpYrvaouWlQ==}

@@ -10,6 +10,7 @@ import { pb } from "@/lib"
 
 import "./assets/main.css"
 import "@/assets/tailwind.css"
+import "@fontsource/inter/variable.css"
 import { pocketBaseSymbol } from "@/symbols/injectionSymbols"
 
 const vueQueryOptions: VueQueryPluginOptions = {
