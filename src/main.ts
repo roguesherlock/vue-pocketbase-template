@@ -7,11 +7,10 @@ import type { VueQueryPluginOptions } from "@tanstack/vue-query"
 import App from "@/App.vue"
 import router from "@/router"
 import { pb } from "@/lib"
-
-import "./assets/main.css"
+import { pocketBaseSymbol } from "@/symbols/injectionSymbols"
+import { createHead } from "@vueuse/head"
 import "@/assets/tailwind.css"
 import "@fontsource/inter/variable.css"
-import { pocketBaseSymbol } from "@/symbols/injectionSymbols"
 
 const vueQueryOptions: VueQueryPluginOptions = {
   queryClientConfig: {
@@ -32,6 +31,7 @@ const vueQueryOptions: VueQueryPluginOptions = {
 
 const app = createApp(App)
 
+app.use(createHead())
 app.use(createPinia())
 app.use(router)
 app.use(VueQueryPlugin, vueQueryOptions)
