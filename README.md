@@ -1,6 +1,6 @@
 # vue-pocketbase-template
 
-This template should help get you started developing with Vue 3 in Vite.
+This template should help get you started developing with Vue 3 in Vite, with [pocketbase](https://pocketbase.io) as backend. I've setup to deploy it on [fly.io](https://fly.io) but you can deploy it anywhere as it's loaded Docker container.
 
 ## Recommended IDE Setup
 
@@ -23,21 +23,62 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
+### Vue
+
 ```sh
 pnpm install
 ```
 
+### Pocketbase
+
+```sh
+cd backend
+go mod tidy
+```
+
+<aside>
+Note: You should also copy .env
+
+```sh
+cp .env.example .env
+```
+</aside>
+
 ### Compile and Hot-Reload for Development
+
+### Vue
 
 ```sh
 pnpm dev
 ```
+
+### Pocketbase
+
+```sh
+cd backend
+go run cmd/server/main.go serve
+```
+> Note that it doesn't hot reload. yet. I'll add a makefile later
+
 
 ### Type-Check, Compile and Minify for Production
 
 ```sh
 pnpm build
 ```
+### Pocketbase
+
+```sh
+cd backend
+go build -o server cmd/server/*.go
+```
+If you're using flyctl (Highly Recommended!)
+
+```sh
+cd backend
+flyctl deploy --dockerfile build/Dockerfile
+```
+
 
 ### Lint with [ESLint](https://eslint.org/)
 
