@@ -1,6 +1,9 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@headlessui/tailwindcss': ^0.1.2
+  '@headlessui/vue': ^1.7.7
+  '@heroicons/vue': ^2.0.13
   '@rushstack/eslint-patch': ^1.1.4
   '@tailwindcss/typography': ^0.5.8
   '@types/node': ^18.11.12
@@ -25,12 +28,15 @@ specifiers:
   vue-tsc: ^1.0.12
 
 dependencies:
+  '@headlessui/vue': 1.7.7_vue@3.2.45
+  '@heroicons/vue': 2.0.13_vue@3.2.45
   pinia: 2.0.28_e7lp6ggkpgyi5vqd44m2kxvk6i
   pocketbase: 0.9.1
   vue: 3.2.45
   vue-router: 4.1.6_vue@3.2.45
 
 devDependencies:
+  '@headlessui/tailwindcss': 0.1.2_tailwindcss@3.2.4
   '@rushstack/eslint-patch': 1.2.0
   '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
   '@types/node': 18.11.18
@@ -289,6 +295,32 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@headlessui/tailwindcss/0.1.2_tailwindcss@3.2.4:
+    resolution: {integrity: sha512-AQNESz+f1grCxifrocOE6hDMDFqhqY0g3xrSGOS0ocGkmVkssaBzXaAPAPNSs/nHmr4ZUhfl5THQpYrvaouWlQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      tailwindcss: ^3.0
+    dependencies:
+      tailwindcss: 3.2.4_postcss@8.4.20
+    dev: true
+
+  /@headlessui/vue/1.7.7_vue@3.2.45:
+    resolution: {integrity: sha512-dkdNhJkxyT9rXW5fHx/MkKaM3U13P3duYuwoGTRmDGjE7xAsvcWOSJRJpw1AmCQTvjZF44bh2wSlySLaHW+WuQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      vue: 3.2.45
+    dev: false
+
+  /@heroicons/vue/2.0.13_vue@3.2.45:
+    resolution: {integrity: sha512-vVCVF02+rNKXEmanVNnmktJlxCbOn0qVFP1gfZPn4bcBIwPX3h9AVHGCkwly+IWDEME8w5oooG0KRd2hhSe/HQ==}
+    peerDependencies:
+      vue: '>= 3'
+    dependencies:
+      vue: 3.2.45
+    dev: false
 
   /@humanwhocodes/config-array/0.11.8:
     resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}

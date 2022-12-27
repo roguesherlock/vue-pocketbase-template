@@ -11,12 +11,15 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.7",
+    "@heroicons/vue": "^2.0.13",
     "pinia": "^2.0.28",
     "pocketbase": "^0.9.1",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
+    "@headlessui/tailwindcss": "^0.1.2",
     "@rushstack/eslint-patch": "^1.1.4",
     "@tailwindcss/typography": "^0.5.8",
     "@types/node": "^18.11.12",
