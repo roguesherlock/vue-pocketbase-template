@@ -116,10 +116,10 @@ import Tool from "@/components/home/Tool.vue"
         <Tool title="@vueuse/head" href="https://github.com/vueuse/head/">
           <p>Super-charged document head management for Vue</p>
         </Tool>
-        <Tool title="vite-plugin-pwa" href="https://prettier.io/">
+        <Tool title="prettier" href="https://prettier.io/">
           <p>An opinionated code formatter</p>
         </Tool>
-        <Tool title="vite-plugin-pwa" href="https://eslint.org/"
+        <Tool title="eslint" href="https://eslint.org/"
           ><p>
             ESLint statically analyzes your code to quickly find problems. It is
             built into most text editors and you can run ESLint as part of your
