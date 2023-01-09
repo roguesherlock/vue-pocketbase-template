@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { Container } from "@/components/Container"
-import { Head } from "@vueuse/head"
-
 interface Props {
   title: string
   intro: string

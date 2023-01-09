@@ -1,6 +1,3 @@
-<script setup lang="ts">
-import SimpleLayout from "@/layouts/SimpleLayout.vue"
-</script>
 <template>
   <SimpleLayout title="About" intro="About this template">
     <div

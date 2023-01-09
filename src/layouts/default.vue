@@ -1,9 +1,3 @@
-<script setup lang="ts">
-import Footer from "./components/Footer.vue"
-import Header from "./components/Header.vue"
-import { RouterView } from "vue-router"
-</script>
-
 <template>
   <div class="fixed inset-0 flex justify-center sm:px-8">
     <div class="hidden w-full max-w-7xl sm:flex lg:px-8">

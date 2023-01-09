@@ -6,33 +6,41 @@ This template should help get you started developing with Vue 3 PWA in Vite, wit
 
 ### Base
 
-- Vue 3
-- Poacketbase
-- Typescript
+- [Vue 3](https://vuejs.org)
+- [Poacketbase](https://pocketbase.io)
+- [Typescript](https://www.typescriptlang.org/)
 
 ### Router / State Management / Data Fetching
 
-- Vue Router
-- Pinia
-- Vue Query
+- [Vue Router](https://router.vuejs.org/)
+- [Pinia](https://pinia.vuejs.org/)
+- [Vue Query](https://tanstack.com/query/v4)
 
 ### UI
 
-- Headless ui
-- Heroicons
-- Motion
+- [Headless ui](https://headlessui.com)
+- [Iconify](https://iconify.design)
+- [Motion](https://motion.dev)
 
 ### CSS / Fonts
 
-- Tailwindcss
-- Inter
+- [Tailwindcss](https://tailwindcss.com)
+- [Inter](https://rsms.me/inter)
+
+### DX Things
+
+- [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages)
+- [vite-plugin-vue-layouts](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
+- [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import)
+- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
+- [Vue Macros](https://vue-macros.sxzz.moe)
 
 ### Miscellaneous
 
-- vite-plugin-pwa
-- @vueuse/head
-- prettier
-- eslint
+- [vite-plugin-pwa](https://vite-pwa-org.netlify.app/)
+- [@vueuse/head](https://github.com/vueuse/head)
+- [prettier](https://prettier.io)
+- [eslint](https://eslint.org)
 
 ## Project Structure
 
@@ -47,16 +55,13 @@ This template should help get you started developing with Vue 3 PWA in Vite, wit
 - `src/lib`: contains all the module level business logic
 - `src/main`: main entry point for the app
 - `src/pages`: contains all the top level page components for the app
-- `src/router`: contains all the routes for the app
 - `src/stores`: contains pinia stores
 - `src/symbols`: contains symbols to use via provide/inject vue api
 
 ## General Conventions
 
 - `@` is root of your frontend source code. i.e. `./src`
-- Use smallcase for nested folder names. Example: `import Section from @/components/elements/Section.vue`
-- Exception to above rule: If the folder exposes multiple components under single umbrella, you should use PascalCase names. Example: `import {Container, ContainerInner} from @/components/Container`
-- components related to a particular page should go into the same name in the components folder. Example: components related to `@/pages/Home.vue` should go in `@/components/home/HomeSection.vue`
+- We use lot of plugins to provide us with nice dx while developing the app. It allows us to just focus on the core part of the app. So try to rely on them for most cases. i.e. you don't really need to import components, core apis, functions etc. It just works.
 
 ## Deploying
 

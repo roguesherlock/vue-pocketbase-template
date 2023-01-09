@@ -1,9 +1,3 @@
-<script setup lang="ts">
-import { RouterLink } from "vue-router"
-import { Container } from "@/components/Container"
-import MobileNavigation from "./MobileNavigation.vue"
-import DesktopNavigation from "./DesktopNavigation.vue"
-</script>
 <template>
   <header class="pointer-events-none relative z-50 flex flex-col">
     <div class="z-10 h-16 pt-6">

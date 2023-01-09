@@ -1,16 +1,3 @@
-<script setup lang="ts">
-import {
-  Popover,
-  PopoverButton,
-  PopoverPanel,
-  PopoverOverlay,
-  TransitionRoot,
-  TransitionChild,
-} from "@headlessui/vue"
-import { XMarkIcon, ChevronDownIcon } from "@heroicons/vue/24/outline"
-
-import MobileNavItem from "./MobileNavItem.vue"
-</script>
 <template>
   <Popover>
     <PopoverButton
@@ -37,7 +24,7 @@ import MobileNavItem from "./MobileNavItem.vue"
       "
     >
       Menu
-      <ChevronDownIcon
+      <i-heroicons-chevron-down
         class="
           ml-3
           h-auto
@@ -110,7 +97,7 @@ import MobileNavItem from "./MobileNavItem.vue"
                 focus:ring-offset-neutral-900
               "
             >
-              <XMarkIcon
+              <i-heroicons-x-mark
                 class="h-6 w-6 text-neutral-500 dark:text-neutral-400"
               />
             </PopoverButton>

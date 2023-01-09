@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import NavLink from "./NavLink.vue"
-import { ContainerOuter, ContainerInner } from "@/components/Container"
-</script>
 <template>
   <footer class="mt-32">
     <ContainerOuter>

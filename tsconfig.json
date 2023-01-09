@@ -5,7 +5,20 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": [
+      "vue/ref-macros",
+      "vite-plugin-pages/client",
+      "vite-plugin-vue-layouts/client",
+      "vite-plugin-pwa/client",
+      "unplugin-vue-macros/macros-global"
+    ]
+  },
+  "vueCompilerOptions": {
+    "plugins": [
+      "@vue-macros/volar/define-model",
+      "@vue-macros/volar/define-slots"
+    ]
   },
 
   "references": [

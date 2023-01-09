@@ -1,9 +1,3 @@
-<script setup lang="ts">
-import SimpleLayout from "@/layouts/SimpleLayout.vue"
-import ToolsSection from "@/components/home/ToolsSection.vue"
-import Tool from "@/components/home/Tool.vue"
-</script>
-
 <template>
   <SimpleLayout title="Home" intro="Vue 3 / Typescript / Pocketbase template">
     <div class="space-y-20">
@@ -73,10 +67,8 @@ import Tool from "@/components/home/Tool.vue"
             integrate beautifully with Tailwind CSS.
           </p>
         </Tool>
-        <Tool title="Heroicons" href="https://heroicons.com/">
-          <p>
-            Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.
-          </p>
+        <Tool title="Iconify" href="https://iconify.design/">
+          <p>All popular icon sets, one framework.</p>
         </Tool>
         <Tool title="Motion" href="https://motion.dev/">
           <p>
@@ -106,6 +98,39 @@ import Tool from "@/components/home/Tool.vue"
           </p></Tool
         >
       </ToolsSection>
+      <ToolsSection title="DX Things">
+        <Tool
+          title="vite-plugin-pages"
+          href="https://github.com/hannoeru/vite-plugin-pages"
+        >
+          <p>
+            File system based routing for Vue 3 / React / Solid applications
+            using Vite
+          </p>
+        </Tool>
+        <Tool
+          title="vite-plugin-vue-layouts"
+          href="https://github.com/JohnCampionJr/vite-plugin-vue-layouts"
+        >
+          <p>Router based layout for Vue 3 applications using Vite</p>
+        </Tool>
+        <Tool
+          title="unplugin-auto-import"
+          href="https://github.com/antfu/unplugin-auto-import"
+        >
+          <p>Auto import APIs on-demand for Vite, Webpack and Rollup</p>
+        </Tool>
+        <Tool
+          title="unplugin-vue-components"
+          href="https://github.com/antfu/unplugin-vue-components"
+        >
+          <p>On-demand components auto importing for Vue.</p>
+        </Tool>
+        <Tool title="Vue Macros" href="https://vue-macros.sxzz.moe/">
+          <p>Explore and extend more macros and syntax sugar to Vue.</p>
+          <p>Similar to auto imports, reduce boilerplate in component</p>
+        </Tool>
+      </ToolsSection>
       <ToolsSection title="Miscellaneous">
         <Tool title="vite-plugin-pwa" href="https://vite-pwa-org.netlify.app/">
           <p>
@@ -113,6 +138,7 @@ import Tool from "@/components/home/Tool.vue"
             framework-agnostic PWA Plugin for Vite
           </p>
         </Tool>
+
         <Tool title="@vueuse/head" href="https://github.com/vueuse/head/">
           <p>Super-charged document head management for Vue</p>
         </Tool>

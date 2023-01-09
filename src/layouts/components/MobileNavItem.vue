@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { RouterLink } from "vue-router"
-import { PopoverButton } from "@headlessui/vue"
 interface Props {
   href: string
 }
