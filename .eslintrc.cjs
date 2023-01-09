@@ -8,6 +8,7 @@ module.exports = {
     "eslint:recommended",
     "@vue/eslint-config-typescript",
     "@vue/eslint-config-prettier",
+    "./.eslintrc-auto-import.json",
   ],
   rules: {
     // override/add rules settings here, such as:

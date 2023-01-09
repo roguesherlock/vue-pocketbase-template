@@ -38,6 +38,9 @@ export default defineConfig({
       dts: "src/auto-imports.d.ts",
       dirs: ["src/composables", "src/stores", "src/lib"],
       vueTemplate: true,
+      eslintrc: {
+        enabled: true,
+      },
     }),
 
     // https://github.com/antfu/unplugin-vue-components
