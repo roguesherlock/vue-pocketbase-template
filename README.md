@@ -1,5 +1,9 @@
 # [vue-pocketbase-template](https://vue-pocketbase-template.vercel.app)
 
+**🚨Important Notes🚨**
+
+You should probably just use [nuxt](https://nuxt.com/) or [vitesse](https://github.com/antfu/vitesse/tree/main) instead.
+
 This template should help get you started developing with Vue 3 PWA in Vite, with [pocketbase](https://pocketbase.io) as backend. I've setup to deploy it on [fly.io](https://fly.io) but you can deploy it anywhere.
 
 ## Stack
